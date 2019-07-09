@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #c7ddef;
+}
+.pull-left{
+    clear: both !important;
+    float: left;
+}
+.container p{
+    font-size: 120%;
+}
+/*Editing bootstrap .img-circle class for adjusting corresponding images*/
+.img-circle{
+    margin: auto;
+}
+/*Styling name*/
+.container h1{
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Centaur;
+    font-weight: bold;
+}
+.container h1 a:hover{
+    text-decoration: none;
+}
+
+/*Overiding bootstrap's jumbotron class for adjusting home page*/
+.jumbotron{
+    margin-top: -20px;
+}
+
+
+/*Editing bootstrap's navbar-nav class for centering navigation menu*/
+/*
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    font-size: 150%;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+*/
+/*Centering hamburger menu*/
+/*
+.navbar-header{
+    text-align:center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right:0;
+}
+*/
+/*Centering hamburger menu ends*/
+
+
+.current-nav{
+    color: red !important;
+}
+
+.social-icons{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.social-icons li{
+    display: inline-block;
+}
+.social-icons a{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 10px;
+}
+.social-icons li a:hover{
+    background-color: white;
+}
+/*Skill page design*/
+*{box-sizing: border-box}
+.skills{
+    text-align: center;
+    margin-top: -7%;
+}
+.skill-heading{
+    text-decoration: none;
+    font-family: "Arial Black";
+    font-size: 200%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px dashed purple;
+}
+.well{
+    margin-top: 50px;
+}
+.development-section p{
+    text-align: left;
+    font-size: 18px;
+    font-family: Arial;
+    margin-top: 5px;
+    margin-bottom: -2px;
+}
+.skills-set-container{
+    width: 100%;
+    background-color: #dddddd;
+}
+.individual-skill{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: large;
+}
+.js{
+    width: 90%;
+    background-color: darkgreen;
+}
+.node{
+    width: 85%;
+    background-color: blue;
+}
+.express{
+    width: 80%;
+    background-color: darkblue;
+}
+.rails{
+    width: 65%;
+    background-color: darkred;
+}
+.html{
+    width: 100%;
+    background-color: green;
+}
+.mongo{
+    width: 60%;
+    background-color: red;
+}
+.mysql{
+    width: 70%;
+    background-color: #2b542c;
+}
+hr{
+    color: #0f0f0f;
+}
+/*Resume page design*/
+.resume{
+    background-color: white;
+    margin-top: -20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+}
+
+/*Editing bootstrap class row for adjusting content padding on resume page*/
+.resume .row{
+    padding: 10px;
+}
+.col-lg-8 ul li span, .col-md-8 ul li span{
+    font-weight: bold;
+}
+.resume .social-icons{
+    text-align: left;
+    font-size: 10px;
+    margin-left: -10px;
+}
+/*Designing project page*/
+.img-alignment{
+    text-align: center;
+}
+.img-thumbnail{
+    margin-bottom: 10px;
+}
+/*styling contact_me page*/
+.contact_page{
+    background-color: white;
+    width: 100%;
+    margin-top: -20px;
+}
+.contact_page .form-horizontal{
+    position: relative;
+    padding: 35px;
+    width: 70%;
+    margin: auto;
+}
+/*media queries*/
+@media (max-width: 768px) {
+    .container{
+        text-align: center;
+    }
+    .container p{
+        font-family: Arial;
+        font-size: 15px;
+        margin: auto;
+    }
+    .container h1{
+        font-size: 200%;
+    }
+    .resume .social-icons{
+        text-align: center;
+        font-size: 10px;
+    }
+    .resume img{
+        text-align: center;
+    }
+}

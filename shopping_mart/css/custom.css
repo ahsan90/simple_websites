@@ -1,0 +1,57 @@
+
+/*
+Athor: Md Ahsanul Hoque
+Date: 19 November, 2018
+Purpose: Custom CSS file for the website
+*/
+
+
+
+/*
+Common css for all pages which body content except nav items
+*/
+.contentMarginTop{
+    margin-top: 55px;
+}
+
+/*
+css navbar styling which overrides bootstrap class navbar
+*/
+.navbar{
+    opacity: .8;
+}
+/*
+css for styling background color of navbar which overrides bootstrap class navbar-inverse
+*/
+.navbar-inverse{
+    background-color: black;
+}
+/*
+css navbar-brand styling which overrides bootstrap class navbar-brand
+*/
+.navbar-brand{
+    font-size: 200%;
+    font-family: Arial !important;
+    color: yellow !important;
+}
+/*
+css form styling for contact page which overrides bootstrap class form-horizontal
+*/
+.form-horizontal{
+    max-width: 80%;
+}
+/*
+css navbar tab styling for each page that overrides bootstrap class navbar-nav
+*/
+.navbar-nav{
+    text-transform: uppercase;
+}
+
+/*
+css for home page
+*/
+.wecomeHeading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}

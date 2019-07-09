@@ -1,0 +1,138 @@
+/*
+  Athor: Md Ahsanul Hoque
+  Date: 22 October 2018
+  Purpose: Custom CSS file
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#container {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid green;
+  background-color: lightgreen;
+  margin-top: 8px;
+  padding: 30px;
+}
+
+nav {
+  background-color: #000;
+  width: 100%;
+  height: 60px;
+  line-height: 59px;
+}
+
+nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#logo img {
+  float: left;
+  line-height: 59px;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  list-style-type: none;
+  float: left;
+  transition: 0.6s all;
+}
+nav ul li:hover {
+  background-color: #05162a;
+}
+nav ul li a {
+  color: white;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: inherit;
+}
+nav ul li a:hover {
+  color: #d7bfac;
+  text-decoration: underline;
+}
+.currentNav {
+  color: #d7bfac;
+  background-color: #323538;
+  text-decoration: underline;
+}
+.banner img {
+  width: 100%;
+  height: 450px;
+}
+.content {
+  margin-top: 50px;
+}
+.welcome {
+  text-align: center;
+}
+.o, .s{
+    font-size: 22px;
+    color: #c29fb5;
+}
+.about {
+  text-align: center;
+}
+.expertise ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid red;
+    padding: 5px;
+}
+.technology ul {
+  border: 1px solid red;
+  padding: 10px;
+  margin-top: 5px;
+}
+.technology ul li {
+  padding: 5px 0;
+  list-style-type: none;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  background-color: aliceblue;
+  border-bottom: 1px dashed black;
+}
+h4 {
+  text-align: center;
+}
+.otherServices {
+  text-align: center;
+}
+
+.otherServices table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.otherServices table th {
+  background-color: #1b1c1d;
+  color: white;
+}
+.otherServices table td,
+th {
+  border: 1px solid #3f1111;
+  text-align: left;
+  padding: 8px;
+}
+footer p {
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #000;
+  color: wheat;
+  margin-top: 100px;
+  vertical-align: middle;
+}

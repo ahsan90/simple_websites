@@ -1,0 +1,33 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th {
+  background-color: #d2e3ef;
+}
+td,
+th {
+  border: 1px solid #ebebeb;
+  text-align: left;
+  padding: 8px;
+}
+.copy {
+  padding: 5px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+}
