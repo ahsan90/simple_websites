@@ -1,0 +1,89 @@
+<!-- 
+Name: Don Bowers modified by Md Ahsanul Hoque
+Date: 29 March 2019
+Purpose: Demonstrate the use of forms and functions to create a mini golf business interface.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Working with Forms</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./custom.css">
+    <script src="./jquery.min.js"></script>
+    <script src="miniGolf.js"></script>
+    <noscript>
+        "You don't have Javascript turned on! In order for this page to function properly you must turn on Javascript."
+    </noscript>
+</head>
+<body>
+<div id="container" class="container">
+    <h1>Jillian's Putt Putt Par-Tee</h1>
+    <h5>Point of Sale System</h5>
+    <div id="leftArea" class="jumbotron">
+        <form>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+
+                    <fieldset>
+                        <legend>Players</legend>
+                        <a href="#" title="(13 and older)">Adults</a>
+                        <select id="adults">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select> $4 each<br><br>
+                        <a href="#" title="(12 and under)">Children</a>
+                        <select id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select> $2 each<br><br>
+                    </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <fieldset>
+                        <legend>Discounts</legend>
+                        <input type="radio" id="caa" name="discountGroup" value="CAA"/> CAA (10%)<br>
+                        <input type="radio" id="mil" name="discountGroup" value="Military"/> Military (25%)<br>
+                        <input type="radio" id="fun" name="discountGroup" value="Fun Club Member"/> FunClub Member (50%)<br>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        <br>
+        <button id="reset" type="button" class="btn btn-warning">Reset Form</button>
+
+    </div>
+    <div id="totalArea" class="row">
+        <div class="col-lg-12 col-md-12">
+            <fieldset>
+                <legend>Totals</legend>
+                Number of Adults: <input type="text" id="numAdults" readonly="readonly"/> <span
+                    id="totalAdultsDiv"></span><br>
+                Number of Children: <input type="text" id="numChildren" readonly="readonly"/> <span
+                    id="totalChildrenDiv"></span><br><br>
+                Net Amount: <span id="totalBeforeTaxDiv"></span><br><br>
+                Gross Amount (including 10% tax): <span id="totalAfterTaxDiv"></span><br>
+                <button type="button" id="changeButton" class="btn btn-default">$CHANGE?</button>
+                <div id="changeOutput">
+                    You owe the customer: <span id="changeDue">.</span>
+                </div>
+                <hr>
+                Discounts Applied:<br>
+                <span id="discountString"></span>
+            </fieldset>
+        </div>
+    </div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

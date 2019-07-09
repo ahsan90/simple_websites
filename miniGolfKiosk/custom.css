@@ -1,0 +1,17 @@
+/*
+Authon: Md Ahsanul Hoque
+Date: 31 March 2019
+Purpose: custom css for styling miniGolfKiosk.html file
+*/
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#totalArea, #leftArea{
+    font-family: Arial;
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    border-bottom: 1px dashed green;
+}

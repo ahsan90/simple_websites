@@ -1,0 +1,47 @@
+/*
+Purpose: css file for customizing trivial.html markup code.
+Date: March 3, 2019
+Author: Md Ahsanul Hoque
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*customizing container div*/
+#container{
+    border: 1px solid green;
+    padding: 5px;
+    margin: 10px auto;
+    width: 800px;
+    font-size: 16px;
+}
+h2{
+    text-align: center;
+    color: green;
+    font-size: 400%;
+    border-bottom: 2px dashed darkgrey;
+    font-family: Arial;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px #ff0000;
+}
+.radio{
+    padding-left: 20px;
+}
+
+.orangeColor{
+    color: orange;
+    font-family: Arial;
+    font-size: 400%;
+}
+.redColor{
+    color: red;
+    font-family: Arial;
+    font-size: 400%;
+}
+.greenColor{
+    color: green;
+    font-family: Arial;
+    font-size: 400%;
+}

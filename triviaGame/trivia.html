@@ -1,0 +1,124 @@
+<!--
+Purpose: Form validation and displaying result of a typical trivia game based on the answers provider by the user.
+Date: March 3, 2019
+Author: Md Ahsanul Hoque
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Trivia Game</title>
+        <script src="./trivProcess.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./custom.css">
+    </head>
+    <body>
+        <div id="container">
+            <h2>General knowledge trivia!!</h2>
+            <form>
+                <!--Question 1 markup-->
+                <div class="form-group">
+                    <label for="capital">1) What is the capital of Hawaii?</label>
+                    <input type="text" class="form-control" id="capital" placeholder="Put your answer here"><br/>
+                    <div id="error_capital_name"></div>
+                </div>
+                <!--Question 2 markup-->
+                <div class="form-group">
+                    <label for="continents">2) How many continents are there in the world?</label>
+                    <input type="text" class="form-control" id="continents" placeholder="Put your answer here"><br/>
+                    <div id="error_no_of_continents"></div>
+                </div>
+
+                <!--Question 3 markup-->
+                <div class="form-group">
+                    <label for="capitalOfUSA">3) What is the capital of USA?</label>
+                    <select class="form-control" id="capitalOfUSA">
+                        <option value="select" >Select</option>
+                        <option value="dc" name="">Washington DC</option>
+                        <option value="ny" name="">New York</option>
+                        <option value="ca" name="">California</option>
+                        <option value="il" name="">Illinois</option>
+                    </select>
+                    <div id="select_q3_error"></div>
+
+                </div>
+
+                <br>
+                <!--Question 4 markup-->
+                <div class="form-group">
+                    <label for="harry_potter_character">4) Who played the character of harry potter in movie?</label>
+                    <select class="form-control" id="harry_potter_character">
+                        <option value="select">Select</option>
+                        <option value="daniel" name="">Daniel Red Cliff</option>
+                        <option value="jd" name="">Johnny Depp</option>
+                        <option value="ld" name="">Leonardo DiCaprio</option>
+                        <option value="none" name="">None of the above</option>
+                    </select>
+                    <div id="select_q4_error"></div>
+                </div>
+                <br>
+
+                <!--Question 5 markup-->
+                <div class="form-group">
+                    <label>5) What year was the first Super Bowl played?</label>
+                    <div id="mcq_question_1_error"></div>
+                    <div class="radio">
+                        <input type="radio" name="choice_question_1" value="1990">1990<br>
+                        <input type="radio" name="choice_question_1" value="1960">1960<br>
+                        <input type="radio" name="choice_question_1" value="1967">1967<br>
+                        <input type="radio" name="choice_question_1" value="none">None of the above<br>
+                    </div>
+                </div>
+                <br>
+
+                <!--Question 6 markup-->
+                <div class="form-group">
+                    <label>6) Pharaoh is the title given to the rulers of which ancient country?</label>
+                    <div id="mcq_question_2_error"></div>
+                    <div class="radio">
+                        <input type="radio" name="choice_question_2" value="egypt"> Egypt<br>
+                        <input type="radio" name="choice_question_2" value="iraq"> Iraq<br>
+                        <input type="radio" name="choice_question_2" value="iran"> Iran<br>
+                        <input type="radio" name="choice_question_2" value="none"> None of the above<br>
+                    </div>
+                </div>
+                <br>
+
+                <!--Question 7 markup-->
+                <div class="form-group">
+                    <label for="summerActivities">7) Select the country/countries enlisted in Commonwealth member list?(Choose all that apply)</label>
+                    <div id="error"></div>
+                    <div class="checkbox" id="summerActivities">
+                        <label>
+                            <input type="checkbox" name="commonwealth" value="canada"> Canada
+                        </label>
+                        <br/>
+                        <label>
+                            <input type="checkbox" name="commonwealth" value="australia"> Australia
+                        </label>
+                        <br/>
+                        <label>
+                            <input type="checkbox" name="commonwealth" value="usa"> United States of America
+                        </label>
+                        <br/>
+                        <label>
+                            <input type="checkbox" name="commonwealth"> None of the above
+                        </label>
+                        <br/>
+                    </div>
+
+                </div>
+                <button type="button" class="btn btn-primary" id="score">Check score</button>
+            </form>
+            <div id="outputDiv">
+
+            </div>
+            <br>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
